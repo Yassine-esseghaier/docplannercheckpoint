@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docplanner groupe</title>
+    <link rel="stylesheet" href="docplanner.css">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <img id="pizza" src="data:image/png;base64,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" alt="docplanner">
+    <div class="doc">
+    <button type="button">About us</button>
+    <button type="button">Career</button>
+    <button type="button">Departments</button>
+    </div>
+    <img id="burger" src="https://play-lh.googleusercontent.com/qbJ31Zk85hmjzXIhvqw0cM2RagievWp_oFu2XNAKAIlg2Lzn8Vul22uBvjFqkWXRV48=s256-rw" alt="docplanner symbol">
+    <article>
+    <h1>Making the healthcare experience more human</h1>
+    <br>
+    <div class="ultron">
+    <p>We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.</p>
+    <br>
+    <p>We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.</p>
+    </div>
+    </article>
+    <div class="ninjamaster">
+    <div class="ninja">
+        <img src="https://www.docplanner.com/icons/icon-patients.svg" alt="doc">
+        <h3>For patients</h3>
+        <p>Find a doctor, book a visit and solve any health-related doubt</p>
+        <button id="salad" type="button"> choose country</button>
+    </div>
+    <div class="master">
+        <img src="	https://www.docplanner.com/icons/icon-doctors.svg" alt="doc">
+        <h4>For doctors</h4>
+        <p>Save time managing visits and cut no-shows by half</p>
+        <button id="master" type="button"> choose country</button>
+    </div>
+    <div class="mastery">
+        <img src="	https://www.docplanner.com/icons/icon-clinics.svg" alt="doc">
+        <h5>For clinics</h5>
+        <p>Deliver an exceptional patient experience in your clinic</p>
+        <button id="mastery" type="button">2 to 20 specialists</button>
+        <button id="bugha" type="button"> more than 20 spec</button>
+    </div>
+    </div>
+    <div class="rocket">
+    <p id="rocket">We are a global</p>
+         <p id="coca">company</p>
+        <p id="cola">with local culture</p>
+        </div>
+        <div class="sucre">
+            <h6 id="sell">The world's biggest
+                healthcare platform</h6>
+                <h7 id="water">We work from 9 offices all over the world, bringing Docplanner Group to life in 13 countries.</h7>
+        <div class="omega">
+            <img src="	https://www.docplanner.com/img/flag.png
+            " alt="doc">
+            <h8>Leader in 13 countries</h8>
+            <p id="omega">Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>
+
+        </div>
+        <div class="omega3">
+            <img src="	https://www.docplanner.com/img/visits.png" alt="doc">
+            <h9 id="george">15,000,000
+                appointments</h9>
+                <p id="james">booked last month</p>
+        </div>
+        <div class="italy">
+            <img src="https://www.docplanner.com/img/patients.png" alt="doc">
+            <h0 id="italy">90,000,000
+                patients</h0>
+                <p id="rome">visit our websites each month</p>
+        </div>
+        <div class="yassine">
+            <img src="https://www.docplanner.com/img/doctors.png
+            " alt="doc">
+            <h1 id="john">210,000
+                active doctors</h1>
+                <p id="kevin">trust our solutions</p>\
+
+            
+        </div>
+        <img id="yassine" src="https://www.docplanner.com/img/sygnet.png" alt="doclogo">
+        
+        </div>
+        <section id="countries">
+            <div class="country">
+                <img src="https://www.docplanner.com/images/warsaw.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">warsa</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/barcelona.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">barcelona</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/munich.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">munich</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/istanbul.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">istanbul</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/rome.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">rome</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/bologna.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">bologna</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/curitiba.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">curitiba</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/rio-janeiro.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">Rio de janeiro</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/mexico-city.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">mexico city</h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            <div class="country">
+                <img src="https://www.docplanner.com/images/bogota.png" alt="doc">
+            <div class="warsa">
+                <h2 id="goal">bogota </h2>
+                <button type="button" id="warsa">see openings </button>
+            </div>
+            </div>
+            
+           
+            
+            
+        </section>
+</body>
+</html>
